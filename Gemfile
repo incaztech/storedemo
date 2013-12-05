@@ -53,3 +53,4 @@ gem "spree_address_book", :git => "https://github.com/bloomcrush/spree_address_b
 gem "spree_product_zoom", :git => "git://github.com/tuxdapenguin/spree_product_zoom.git", :branch => "2-1-stable"
 gem 'spree_variant_options', :git => 'git://github.com/tuxdapenguin/spree_variant_options.git', :branch => "2-1-stable"
 gem 'spree_conekta', git: 'git://github.com/crowdint/spree_conekta.git'
+gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'

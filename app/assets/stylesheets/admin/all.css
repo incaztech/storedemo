@@ -13,4 +13,5 @@
  *= require admin/spree_variant_options
 
  *= require spree_conekta
+ *= require admin/spree_i18n
 */

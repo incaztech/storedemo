@@ -16,3 +16,4 @@
 //= require store/spree_variant_options
 
 //= require spree_conekta
+//= require store/spree_i18n

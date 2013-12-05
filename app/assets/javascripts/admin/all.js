@@ -14,3 +14,4 @@
 //= require admin/spree_address_book
 
 //= require spree_conekta
+//= require admin/spree_i18n

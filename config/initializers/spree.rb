@@ -11,4 +11,7 @@ Spree.config do |config|
   # config.site_name = "Spree Demo Site"
 end
 
+SpreeI18n::Config.available_locales = [:en, :'es-MX']
+SpreeI18n::Config.supported_locales = [:en, :'es-MX'] 
+
 Spree.user_class = "Spree::User"
