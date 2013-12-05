@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/crowdint/spree_conekta.git
+  revision: 0940b388c69d355d82fcf3abf11eabeb05704a4b
+  specs:
+    spree_conekta (0.5.9)
+      activemerchant
+      faraday
+      faraday_middleware
+      oj
+      spree (~> 2.1)
+      typhoeus
+
+GIT
   remote: git://github.com/spree/spree_fancy.git
   revision: 187282af0246f21c035e20ab4a393da0f7c442dc
   branch: 2-1-stable
@@ -8,6 +20,33 @@ GIT
       deface (~> 1.0.0rc3)
       jquery-ui-rails
       spree_core (~> 2.1.0)
+
+GIT
+  remote: git://github.com/tuxdapenguin/spree_product_zoom.git
+  revision: c0fa4eef028263e6218d66d7c54b807a82b4cb5f
+  branch: 2-1-stable
+  specs:
+    spree_product_zoom (2.2)
+      spree_core (~> 2.1.0.beta)
+
+GIT
+  remote: git://github.com/tuxdapenguin/spree_variant_options.git
+  revision: d5a86d066aa4c91d3fc9e72a01848b76d35c0df5
+  branch: 2-1-stable
+  specs:
+    spree_variant_options (0.7)
+      spree_api (~> 2.1)
+      spree_backend (~> 2.1)
+      spree_core (~> 2.1)
+      spree_frontend (~> 2.1)
+
+GIT
+  remote: https://github.com/bloomcrush/spree_address_book.git
+  revision: 808b7b6ec93e4459a75f1b84bc08dd2925570f7c
+  branch: 2-1-stable
+  specs:
+    spree_address_book (2.1.0)
+      spree_core (~> 2.1)
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
@@ -118,8 +157,16 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    ethon (0.6.1)
+      ffi (>= 1.3.0)
+      mime-types (~> 1.18)
     execjs (2.0.2)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     ffaker (1.22.1)
+    ffi (1.9.3)
     fssm (0.2.10)
     gyoku (0.4.6)
       builder (>= 2.1.2)
@@ -153,9 +200,11 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.8.2)
     multi_xml (0.5.5)
+    multipart-post (1.2.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
+    oj (2.3.0)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
@@ -286,6 +335,8 @@ GEM
     truncate_html (0.9.2)
     turbolinks (2.0.0)
       coffee-rails
+    typhoeus (0.6.6)
+      ethon (~> 0.6.1)
     tzinfo (0.3.38)
     uglifier (2.3.2)
       execjs (>= 0.3.0)
@@ -315,8 +366,12 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   spree (= 2.1.3)
+  spree_address_book!
   spree_auth_devise!
+  spree_conekta!
   spree_fancy!
   spree_gateway!
+  spree_product_zoom!
+  spree_variant_options!
   turbolinks
   uglifier (>= 1.3.0)

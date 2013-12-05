@@ -11,3 +11,6 @@
 
 //= require_tree .
 //= require admin/spree_fancy
+//= require admin/spree_address_book
+
+//= require spree_conekta

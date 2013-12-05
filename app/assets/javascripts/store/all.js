@@ -11,3 +11,8 @@
 
 //= require_tree .
 //= require store/spree_fancy
+//= require store/spree_address_book
+//= require store/spree_product_zoom
+//= require store/spree_variant_options
+
+//= require spree_conekta

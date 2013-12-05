@@ -9,4 +9,8 @@
  *= require_self
  *= require_tree .
  *= require admin/spree_fancy
+ *= require admin/spree_address_book
+ *= require admin/spree_variant_options
+
+ *= require spree_conekta
 */

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205010054) do
+ActiveRecord::Schema.define(version: 20131205011533) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 20131205010054) do
     t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.datetime "deleted_at"
   end
 
   add_index "spree_addresses", ["firstname"], name: "index_addresses_on_firstname", using: :btree
@@ -96,6 +98,14 @@ ActiveRecord::Schema.define(version: 20131205010054) do
     t.string   "calculable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "spree_conekta_payments", force: true do |t|
+    t.string   "payment_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   create_table "spree_configurations", force: true do |t|
@@ -201,6 +211,10 @@ ActiveRecord::Schema.define(version: 20131205010054) do
     t.integer  "option_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "spree_option_values_variants", id: false, force: true do |t|
