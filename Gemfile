@@ -6,6 +6,17 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+group :production do
+  gem 'unicorn'
+  gem 'foreman'
+  gem 'pg'
+  gem 'therubyracer'
+end
+
+group :development do
+  gem 'capistrano'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
